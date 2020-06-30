@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
 }
 .row-content {
   margin: 0px auto;
-  padding: 50px 0px;
+  padding: 30px 0px;
   border-bottom: 1px ridge;
-  min-height: 400px;
+  min-height: 250px;
 }
 .footer {
   background-color: #D1C4E9;
@@ -49,6 +57,9 @@ body {
   left: 0;
   min-height: 300px;
 }
+.navbar-text{
+  cursor: pointer;
+}
 #carouselButton {
   right: 0px;
   position: absolute;
@@ -56,8 +67,12 @@ body {
   z-index: 1;
 }
 
+.nav-link:hover , .navbar-text:hover{
+  transform: translateY(2px);
+}
+
 .carousel-caption{
-  padding-left: 180px;
+  padding-left: 200px;
 
 }
 .modal-header{
@@ -69,4 +84,75 @@ body {
 }
 .modal-content{
   background-color: #D1C4E9; 
+}
+.rbutton{
+  color:floralwhite;
+  background-color: #512DA8;
+}
+
+@media(max-width: 768px){
+  .nav-link:hover {
+    transition: ease-in-out all .5s; 
+    -moz-transition: ease-in-out all .4s;
+    -webkit-transition: ease-in-out all .4s;
+    color:floralwhite;
+    text-decoration:underline;
+    font-weight:bold;
+    transform: translateX(8px);
+  }
+  .l{
+    margin-left: 10px;
+  }
+  .rbutton{
+    margin-top:10px;
+  }
+  .jimage{
+    margin-left: 80px;
+  }
+  .navbar-text:hover{
+    transform: scale(1.2) ;
+  }
+}
+.breadcrumb-item{
+  color:#512DA8;
+}
+.r{
+  background-color: #512DA8;
+  color: floralwhite;
+}
+.content{
+  background-color: #D1C4E9; 
+}
+.btn-social-icon{
+  transform: translateY(2px);
+}
+.smoke{
+  margin-left: 20px;
+}
+.fact{
+  background-color: #512DA8;
+}
+.factcontent{
+   background-color: #D1C4E9; 
+}
+.tablehead{
+   background-color: #512DA8;
+   color: floralwhite;
+}
+.clr{
+  background-color: #D1C4E9; 
+}
+.form-start{
+  margin-top: 20px;
+}
+form{
+  border: 1px solid black;
+  padding:15px;
+  background-color:#D1C4E9; 
+}
+.form-heading{
+  background-color: #512DA8;
+  color:floralwhite;
+  margin-bottom: 5px;
+  padding:5px;
 }
